@@ -8,7 +8,6 @@ Bot automatique pour détecter l'activation du Haki dans Roblox et appuyer autom
 - Vérification que Roblox est la fenêtre active avant d'agir
 - Interface graphique overlay (transparente, toujours au premier plan)
 - Raccourci personnalisable (F6 par défaut)
-- Pas de console visible en arrière-plan
 
 ## Installation
 
