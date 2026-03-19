@@ -41,8 +41,6 @@ python sailorpiece.py
 
 ## Compilation en .exe
 
-### Option 1 : Commandes manuelles
-
 ```bash
 # Installer PyInstaller si besoin
 pip install pyinstaller
@@ -53,30 +51,12 @@ python -m PyInstaller --onefile --add-data "image.png;." --icon=logo.ico --name 
 
 Le .exe sera dans le dossier `dist/`
 
-### Option 2 : GitHub Actions (Automatique)
-
-1. Push le code sur GitHub
-2. Créer un tag de version :
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-3. GitHub Actions compilera automatiquement et créera une release
-
 ## Fichiers requis
 
 - `sailorpiece.py` - Code source principal
 - `image.png` - Image à détecter (doit être dans le même dossier que l'exe)
-- `logo.ico` - Icône de l'application (optionnel)
 
 ## Dépannage
-
-### Le bot ne détecte pas l'image
-- Vérifier que `image.png` est dans le même dossier que l'exe
-- Ajuster la valeur `confidence=0.6` dans le code si nécessaire
-
-### Le bot appuie sur H n'importe quand
-- La vérification de fenêtre Roblox peut nécessiter un ajustement selon votre configuration
 
 ### Erreur "pyinstaller n'est pas reconnu"
 - Utiliser `python -m PyInstaller` au lieu de `pyinstaller`
